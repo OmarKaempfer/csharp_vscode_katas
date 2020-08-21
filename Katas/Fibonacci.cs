@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System;
 
 namespace Katas
 {
@@ -21,14 +20,16 @@ namespace Katas
             return fibonacciSeries.ToArray();
         }
 
-        public static IEnumerable<int> GetSeries() {
+        public static IEnumerable<int> GetSeries()
+        {
 
             yield return 0;
             yield return 1;
 
             int previousFibonacciNumber = 0;
             int currentFibonacciNumber = 1;
-            while(true) {
+            while(true)
+            {
                 currentFibonacciNumber = currentFibonacciNumber + previousFibonacciNumber;
                 previousFibonacciNumber = currentFibonacciNumber - previousFibonacciNumber;
                 yield return currentFibonacciNumber;

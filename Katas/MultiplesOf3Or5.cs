@@ -12,7 +12,8 @@ namespace Katas
 
         public static int[] Find(int upperLimit) {
 
-            if(upperLimit <= 0) {
+            if(upperLimit <= 0)
+            {
                 return new int[]{};
             }
             

@@ -30,22 +30,26 @@ namespace Katas.Tests
         }
 
         [Test]
-        public void TestSumOfEvenNumbersUpTo0() {
+        public void TestSumOfEvenNumbersUpTo0()
+        {
             Katas.Fibonacci.SumOfEvenNumbersUpTo(0).Should().Be(0);
         }
 
         [Test]
-        public void TestSumOfEvenNumbersUpTo10() {
+        public void TestSumOfEvenNumbersUpTo10()
+        {
             Katas.Fibonacci.SumOfEvenNumbersUpTo(10).Should().Be(10);
         }
 
         [Test]
-        public void TestSumOfEvenNumbersUpTo100() {
+        public void TestSumOfEvenNumbersUpTo100()
+        {
             Katas.Fibonacci.SumOfEvenNumbersUpTo(100).Should().Be(44);
         }
 
         [Test]
-        public void TestSumOfEvenNumbersUpTo1000() {
+        public void TestSumOfEvenNumbersUpTo1000()
+        {
             Katas.Fibonacci.SumOfEvenNumbersUpTo(1000).Should().Be(798);
         }
     }
