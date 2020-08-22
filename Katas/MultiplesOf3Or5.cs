@@ -7,7 +7,7 @@ namespace Katas
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine(Fibonacci.SumOfEvenNumbersUpTo(4000000));
+            System.Console.WriteLine(PrimeFactors.GetLargestPrimeFactorOf(600851475143));
         }
 
         public static int[] Find(int upperLimit) {
