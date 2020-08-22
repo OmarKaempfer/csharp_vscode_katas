@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 
-namespace Katas
+namespace ProjectEuler
 {
     public class Fibonacci
     {
         public static int[] GetSequenceUpTo(int upperLimit)
         {
             List<int> fibonacciSeries = new List<int>();
-            using(var fibonacciEnumerator = Katas.Fibonacci.GetSeries().GetEnumerator())
+            using(var fibonacciEnumerator = ProjectEuler.Fibonacci.GetSeries().GetEnumerator())
             {
                 fibonacciEnumerator.MoveNext();
                 while(fibonacciEnumerator.Current <= upperLimit)

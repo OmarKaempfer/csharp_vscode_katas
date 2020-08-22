@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Katas {
+namespace ProjectEuler {
     public class PrimeFactors
     {
 

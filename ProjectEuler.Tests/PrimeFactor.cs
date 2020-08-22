@@ -1,7 +1,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace Katas.Tests
+namespace ProjectEuler.Tests
 {
     public class PrimeFactors
     {
@@ -14,7 +14,7 @@ namespace Katas.Tests
         [TestCase(13195, new long[]{5, 7, 13, 29})]
         public void GetPrimeFactors(long number, long[] primeFactors)
         {
-            Katas.PrimeFactors.GetPrimeFactorsOf(number).Should().Equal(primeFactors);
+            ProjectEuler.PrimeFactors.GetPrimeFactorsOf(number).Should().Equal(primeFactors);
         }
 
         [TestCase(0, 0)]
@@ -26,7 +26,7 @@ namespace Katas.Tests
         [TestCase(13195, 29)]
         public void GetLargestPrimeFactor(int number, int largestPrimeFactor)
         {
-            Katas.PrimeFactors.GetLargestPrimeFactorOf(number).Should().Be(largestPrimeFactor);
+            ProjectEuler.PrimeFactors.GetLargestPrimeFactorOf(number).Should().Be(largestPrimeFactor);
         }
     }
 }

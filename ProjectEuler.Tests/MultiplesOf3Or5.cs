@@ -2,7 +2,7 @@ using System.Linq;
 using NUnit.Framework;
 using FluentAssertions;
 
-namespace Katas.Tests
+namespace ProjectEuler.Tests
 {
     public class MultiplesOf3Or5
     {
@@ -14,7 +14,7 @@ namespace Katas.Tests
         [Test]
         public void TestZeroUpperLimit()
         {
-            Katas.MultiplesOf3Or5.Find(0).Should().BeEmpty();
+            ProjectEuler.MultiplesOf3Or5.Find(0).Should().BeEmpty();
         }
 
         [Test]
@@ -25,8 +25,8 @@ namespace Katas.Tests
             int sumOfMultiplesOf15 = FindSumOfMultiplesOf(15, 1000);
 
             int sumOfMultiplesOf3Or5 = sumOfMultiplesOf3 + sumOfMultiplesOf5 - sumOfMultiplesOf15;
-            Katas.MultiplesOf3Or5.Find(1000).Distinct().Aggregate((x, y) => x + y).Should().Be(sumOfMultiplesOf3Or5);
-            Katas.MultiplesOf3Or5.Find(1000).Count().Should().Be(FindCountOfMultiplesOf(5, 1000) 
+            ProjectEuler.MultiplesOf3Or5.Find(1000).Distinct().Aggregate((x, y) => x + y).Should().Be(sumOfMultiplesOf3Or5);
+            ProjectEuler.MultiplesOf3Or5.Find(1000).Count().Should().Be(FindCountOfMultiplesOf(5, 1000) 
                                                                 + FindCountOfMultiplesOf(3, 1000)  
                                                                 - FindCountOfMultiplesOf(15, 1000));
         }

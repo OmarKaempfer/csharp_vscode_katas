@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System;
 
-namespace Katas
+namespace ProjectEuler
 {
     public class MultiplesOf3Or5
     {
