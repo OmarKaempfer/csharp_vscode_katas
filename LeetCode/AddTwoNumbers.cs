@@ -16,6 +16,14 @@ namespace LeetCode
             }
         }
 
+        /// <summary>
+        /// Builds the result in one pass adding node by node
+        /// Time: O(max(m,n))
+        /// Space: O(max(m,n))
+        /// </summary>
+        /// <param name="firstNumber"></param>
+        /// <param name="secondNumber"></param>
+        /// <returns></returns>
         public static ListNode AddBigNumbers(ListNode firstNumber, ListNode secondNumber)
         {
             int carry = 0;
@@ -50,6 +58,7 @@ namespace LeetCode
             previousNode.next = null;
             return head;
         }
+
         /// <summary>
         /// Parses the two numbers contained in the linked lists, sum them and then
         /// builds a new linked list.
